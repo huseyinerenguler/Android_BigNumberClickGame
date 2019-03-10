@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_game"
+    tools:context=".ActivityGame">
+
+    <TextView
+        android:id="@+id/textView_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/burbank_bold"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:progressTint="#FFF200"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_level" />
+
+    <TextView
+        android:id="@+id/textView_skor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/burbank_bold"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/ratingBar_rate" />
+
+    <ProgressBar
+        android:id="@+id/progresBar_time"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/textView_skor" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progresBar_time">
+
+        <TextView
+            android:id="@+id/tv_number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_numbers"
+            android:fontFamily="@font/burbank_bold"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_1"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_numbers"
+            android:fontFamily="@font/burbank_bold"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_1"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_2"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_number3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_numbers"
+            android:fontFamily="@font/burbank_bold"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_number4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_numbers"
+            android:fontFamily="@font/burbank_bold"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_2"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_1" />
+
+        <TextView
+            android:id="@+id/tv_number5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_numbers"
+            android:fontFamily="@font/burbank_bold"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_2"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_2"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_1"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_1" />
+
+        <TextView
+            android:id="@+id/tv_number6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_numbers"
+            android:fontFamily="@font/burbank_bold"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_2"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_1" />
+
+        <TextView
+            android:id="@+id/tv_number7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_numbers"
+            android:fontFamily="@font/burbank_bold"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_2" />
+
+        <TextView
+            android:id="@+id/tv_number8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_numbers"
+            android:fontFamily="@font/burbank_bold"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_2"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_1"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_2" />
+
+        <TextView
+            android:id="@+id/tv_number9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_numbers"
+            android:fontFamily="@font/burbank_bold"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_2"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_2" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_vertical_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_vertical_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.67" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_horizontal_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_horizontal_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.67" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
